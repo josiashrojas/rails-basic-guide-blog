@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# Troubleshooting
+* On Windows if you encounter with the error `Errno::EACCES` it can be solve with the command `icacls C:\User\username\rails\blog /grant Everyone:F`. This error seems to be due to user permissions. (More details on [stackoverflow](https://stackoverflow.com/a/71057869))
