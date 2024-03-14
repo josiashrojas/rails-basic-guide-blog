@@ -1,0 +1,22 @@
+.article__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.article__list > li{
+    border-bottom:  1px solid rgba(0, 0, 0, 0.2);
+}
+
+.article__list > li:hover{
+    color: var(--color-primary);
+    border-color: inherit;
+    transition: all ease;
+}
+
+.article__list a{
+    text-decoration: none;
+    color: inherit;
+}

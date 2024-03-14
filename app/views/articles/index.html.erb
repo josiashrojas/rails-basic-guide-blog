@@ -1,8 +1,8 @@
 <h1>Articles</h1>
 
-Our blog has <%= Article.public_count %> articles and counting!
+<p class="text--black-300">Our blog has <span class="text--primary text--bold"><%= Article.public_count %> articles</span> and counting!</p>
 
-<ul>
+<ul class="article__list">
     <% @articles.each do |article| %>
         <% unless article.archive? %>
             <li>
@@ -11,4 +11,4 @@ Our blog has <%= Article.public_count %> articles and counting!
         <% end %>
     <% end %>
 </ul>
-<%= link_to "New Article", new_article_path %>
+<%= link_to "New Article", new_article_path, class: "btn btn--border" %>
